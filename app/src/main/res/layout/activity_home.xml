@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adamapps.android.xup.Home">
+
+    <include
+        android:id="@+id/tool"
+        layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:id="@+id/original_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <devlight.io.library.ntb.NavigationTabBar
+        android:id="@+id/ntb_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        app:ntb_badge_bg_color="#ffff0000"
+        app:ntb_badge_gravity="top"
+        app:ntb_badge_position="left"
+        app:ntb_badge_size="12sp"
+        app:ntb_badge_title_color="#ffffffff"
+        app:ntb_badge_use_typeface="true"
+        app:ntb_badged="true"
+        app:ntb_typeface="font/Vincentia.otf" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_person"
+        android:tint="#9f90af"
+        app:backgroundTint="#605271" />
+
+
+</android.support.design.widget.CoordinatorLayout>

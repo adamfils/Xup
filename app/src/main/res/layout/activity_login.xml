@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall1"
+    tools:context="com.adamapps.android.xup.Login">
+
+    <Button
+        android:id="@+id/google_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phone_btn"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_btn_trans"
+        android:text="Google"
+        android:textColor="#fff"
+        android:onClick="GoogleSign"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/phone_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_btn_trans"
+        android:text="Phone"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+</RelativeLayout>
